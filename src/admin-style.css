@@ -1,0 +1,205 @@
+body.login {
+  font-family: Helvetica, Arial, sans-serif;
+  background: rgb(238, 174, 202);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1);
+}
+
+body div#login {
+  max-width: 450px;
+  width: 100%;
+
+  padding: 24px;
+  border-radius: 24px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 140px;
+    mask: url(./icon-login.svg) 50% 50% / 72px no-repeat;
+  }
+}
+
+body.login form .input,
+.login form input[type="checkbox"],
+.login input[type="text"] {
+  border-color: #ddd;
+  border-radius: 0;
+  background-color: #f9f9f9;
+}
+
+body.login form#loginform {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+  border: none;
+  box-shadow: none;
+  overflow: visible;
+}
+
+body.login form#loginform .submit {
+  text-align: center;
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.login .button-primary {
+  float: none;
+}
+
+body.login form#loginform .submit input[type="submit"],
+body.login.wp-core-ui .button.button-large {
+  font-size: 1rem;
+  line-height: 3;
+  order: 4;
+  width: 100%;
+  max-width: 250px;
+  border-radius: 30px;
+}
+
+body.login form {
+  border: none;
+  box-shadow: none;
+}
+
+body.login form .input,
+.login form input[type="checkbox"],
+.login input[type="text"] {
+  border-color: #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  box-shadow: none;
+}
+
+body.login .dashicons-visibility:before {
+  content: "\f177";
+}
+
+body.login form input[type="checkbox"]:checked::before {
+  content: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cpath%20d%3D%27M14.83%204.89l1.34.94-5.81%208.38H9.02L5.78%209.67l1.34-1.25%202.57%202.4z%27%20fill%3D%27%232b2727%27%2F%3E%3C%2Fsvg%3E");
+}
+
+body.login form#loginform .forgetmenot {
+  text-align: center;
+  order: 5;
+}
+
+body.login p#nav,
+body.login p#backtoblog,
+#login form p.submit {
+  text-align: center;
+  padding: 0;
+}
+
+body.login p#backtoblog {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+body.login .notice {
+  margin: 0 16px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+body.login .notice.notice-info.message {
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+body.login .notice.notice-info.message p {
+  position: relative;
+  z-index: 3;
+}
+
+body.login .notice.notice-info.message::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+}
+
+body.login .blt-login-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Customize the login page background */
+body.login {
+  background-color: #f4f4f4;
+}
+
+/* Customize the login form */
+body.login #loginform {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+body.login .language-switcher {
+  margin-top: 24px;
+}
+
+body.login .language-switcher input[type="submit"] {
+  color: #fff;
+  border-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+body.login .language-switcher #language-switcher-locales {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  body div#login {
+    width: 320px;
+  }
+}
+
+body.login #lostpasswordform label,
+body.login #loginform label {
+  font-size: 1rem;
+  color: #2b2727;
+}
+
+body.login .dashicons.dashicons-hidden::before,
+body.login .dashicons.dashicons-visibility::before {
+  content: "" !important;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+body.login .dashicons.dashicons-visibility::before {
+  background-image: url(./icon-eye.svg);
+}
+
+body.login .dashicons.dashicons-hidden::before {
+  background-image: url(./icon-eye-crossed.svg);
+}
