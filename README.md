@@ -5,3 +5,5 @@
 ## Color options
 
 Buttons, text and links can be colored via the Plugin Settings page located under Tools > Basic Login Settings.
+
+In this first iteration the gradient background is hard coded.
