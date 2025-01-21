@@ -4,4 +4,4 @@
 
 ## Color options
 
-Buttons, text and links can be colors via the Plugin Settings page located under Tools > Basic Login Settings.
+Buttons, text and links can be colored via the Plugin Settings page located under Tools > Basic Login Settings.
